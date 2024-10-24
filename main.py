@@ -1,13 +1,9 @@
 from swarm import Swarm, Agent
 import os
 
-# os.environ["OPENAI_KEY"] = (
-#     "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"
-# )
+
 #
-os.environ["OPENAI_API_KEY"] = "http://localhost:11434/v1"
-os.environ["OPENAI_BASE_URL"] = "http://localhost:11434/v1"
-os.environ["OPENAI_MODEL_NAME"] = "llama3.2:latest"
+
 
 # from duckduckgo_search import DDGS
 # from swarm import Swarm, Agent
@@ -186,8 +182,6 @@ def run_news_workflow(topic):
     )
 
     return chinese_news_responese.messages[-1]["content"]
-
-    return edited_news_response.messages[-1]["content"]
 
 
 # Example of running the news workflow for a given topic
